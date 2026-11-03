@@ -1,8 +1,8 @@
-# LinkedIn add-on
+# LinkedIn automation option
 
-Setup does not ask about this add-on. Follow this page only when the person asks for it, for example after seeing it in the optional extras at the end of setup.
+Setup does not ask about this automation option. Follow this page only when the person asks for it, for example after seeing it in the optional extras at the end of setup.
 
-Say this first, in these words: "The add-on lets Claude read LinkedIn-only content in your own browser, so your briefs can point you to it. You do all the commenting and posting yourself. Claude never does."
+Say this first, in these words: "The automation option lets Claude read LinkedIn-only content in your own browser, so your briefs can point you to it. You do all the commenting and posting yourself. Claude never does."
 
 Then show the person "What it is for", "What it is not for", "What you need", "About Claude in Chrome" and "Warnings" in plain words. Offer paste mode (`setup/paste-mode.md`) as the no-risk alternative.
 
@@ -11,7 +11,7 @@ Then show the person "What it is for", "What it is not for", "What you need", "A
 Two jobs, and no others:
 
 1. Read recent posts from the coaches you listed (about 5 LinkedIn pages per career guidance run).
-2. Read your own recent comments and posts, and list new replies and which ones are owed an answer (1 to 2 pages per midweek run).
+2. Read your own recent comments and posts, and list new replies and which ones need an answer (1 to 2 pages per midweek run).
 
 Only the career guidance and midweek runs use it. The weekly sector brief never opens LinkedIn.
 
@@ -47,18 +47,18 @@ Posting, commenting, reacting, messaging, connection requests, following, search
 2. **LinkedIn can warn you, limit your account or close it. That is LinkedIn's decision, and the author of this repo cannot help with it.**
 3. **Claude only reads. It never posts, comments, reacts, messages, connects, follows or sends anything.**
 4. **Claude in Chrome works inside your signed-in browser. Use a separate Chrome profile for this, with no sensitive accounts in it.**
-5. **Claude loads only a small number of pages per run (about 5 on career guidance and 2 on the midweek update). It stops at any login wall or security check and tells you.**
-6. **The briefs are useful without this add-on. Keep it off if you are unsure. Paste mode gives you much of the same help with no risk to your account.**
+5. **Claude loads only a small number of pages per scheduled run (about 5 on career guidance and 2 on the midweek update). It stops at any login wall or security check and tells you.**
+6. **The briefs I write for you are useful without this option, and you can choose not to enable it if you're unsure. Paste mode adds some manual work but gives you much of the same value without any risk to your account.**
 
 ## The question to ask
 
-Ask in these words (you may split it into short paragraphs): "Some of your professional conversation lives only on LinkedIn: posts from the coaches you follow, and replies to your own comments. The optional LinkedIn add-on lets Claude read those in your own browser so your briefs can point you to them. You do all the commenting and posting yourself. Claude never does. LinkedIn's rules do not allow tools like this, and LinkedIn can limit or close your account. Most people should leave it off. Do you want it on?"
+Ask in these words (you may split it into short paragraphs): "Some of your professional conversation lives only on LinkedIn: posts from the coaches you follow, and replies to your own comments. The optional LinkedIn automation option lets Claude read those in your own browser so your briefs can point you to them. You do all the commenting and posting yourself. Claude never does. LinkedIn's rules do not allow tools like this, and LinkedIn can limit or close your account. Most people should leave it off. Do you want it on?"
 
 ## Confirmation
 
-Turn the add-on on only if the person clearly says they understand the warnings, in their own words. If they hesitate, leave it off. After a yes:
+Turn the automation option on only if the person clearly says they understand the warnings, in their own words. If they hesitate, leave it off. After a yes:
 
 1. Collect the coach profile links.
 2. Set `{{LINKEDIN_ADDON}}` to on in the midweek update and career guidance task prompts.
 3. Require the person's computer for those two tasks.
-4. Set the LinkedIn add-on line in the Settings doc to on.
+4. Set the LinkedIn automation option line in the Settings doc to on.

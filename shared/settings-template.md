@@ -3,11 +3,11 @@
 Version: {{VERSION}}
 Created: {{DATE}}
 Briefs turned on: {{BRIEFS_ON}}
-LinkedIn add-on: {{LINKEDIN_ADDON}}
+LinkedIn automation option: {{LINKEDIN_ADDON}}
 Time zone: {{TIMEZONE}}
 Documents live in: Claude Docs (ask Claude to export any brief to Word, PDF or Markdown)
 
-You can edit this doc. The weekly runs only change the History section and the Suggested additions list.
+You can edit this doc. The weekly scheduled runs only change the History section and the Suggested additions list.
 
 ## About you
 
@@ -45,8 +45,8 @@ Anything else you want the briefs to know. Examples: "Skip news about X." "Keep 
 
 ## Suggested additions
 
-Runs add ideas here, such as a new coach who shows up in several items. Nothing is added to your lists until you say so.
+Scheduled runs add ideas here, such as a new coach who shows up in several items. Nothing is added to your lists until you say so.
 
 ## History
 
-Kept by the runs. Format: date | topic | title | URL. Last 8 weeks.
+Kept by the scheduled runs. Format: date | topic | title | URL. Last 8 weeks.

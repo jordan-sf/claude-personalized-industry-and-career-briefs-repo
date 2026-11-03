@@ -3,7 +3,7 @@
 Default schedule: Tuesday morning.
 Reads: the Settings doc.
 Writes: a new Claude Doc named "YYYY-MM-DD Career Guidance Brief".
-LinkedIn: used only when the add-on is on, for one job: recent posts from the listed coaches.
+LinkedIn: used only when the automation option is on, for one job: recent posts from the listed coaches.
 
 ## Prompt to install
 
@@ -11,13 +11,13 @@ Placeholders: `{{VERSION}}`, `{{SETTINGS_DOC_URL}}`, `{{LINKEDIN_ADDON}}` (on or
 
 ---
 
-Career guidance run. Version {{VERSION}}. Settings doc: {{SETTINGS_DOC_URL}}. LinkedIn add-on: {{LINKEDIN_ADDON}}.
+Career guidance run. Version {{VERSION}}. Settings doc: {{SETTINGS_DOC_URL}}. LinkedIn automation option: {{LINKEDIN_ADDON}}.
 
 Follow these steps exactly, and follow the rules at the end.
 
 1. Open the Settings doc. Read About you (including the career goal), Career advice sources, Notes to Claude, History, and the LinkedIn history section.
 
-2. For each career advice source, look for a feed first (a blog feed, a newsletter archive, or a podcast or video channel page). If there is none, use the source's public website. When the LinkedIn add-on is "on" and the source has a LinkedIn profile link in the Settings doc, also read that coach's recent posts there (about 5 LinkedIn pages in total). Open no other profile and run no LinkedIn search. If a coach has no profile link, skip LinkedIn for that coach. When the add-on is "off", never open LinkedIn.
+2. For each career advice source, look for a feed first (a blog feed, a newsletter archive, or a podcast or video channel page). If there is none, use the source's public website. When the LinkedIn automation option is "on" and the source has a LinkedIn profile link in the Settings doc, also read that coach's recent posts there (about 5 LinkedIn pages in total). Open no other profile and run no LinkedIn search. If a coach has no profile link, skip LinkedIn for that coach. When the automation option is "off", never open LinkedIn.
 
 3. Take items from the last 7 days that give real advice, at most 5 across all sources. Skip anything already in History. Never pad with older items.
 

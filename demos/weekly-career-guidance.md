@@ -3,7 +3,7 @@
 > **What you get:** New advice from the coaches and writers you pick, summarized, with one action to try this week.
 > **When it arrives:** Tuesday morning (you choose).
 > **Reading time:** About 5 minutes.
-> **Why it helps:** You get the best of several coaches in one short read, matched to your own goal.
+> Read your favorite career coaches in one brief overview.
 >
 > Sample reader: Riley, a product marketing manager. Career goal: move into a director role within a year. Sources: Pat Rivera (Offer Notes) and Dana Whitfield (The Next Role newsletter).
 

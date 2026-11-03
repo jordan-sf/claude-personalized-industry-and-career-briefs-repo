@@ -53,7 +53,7 @@ Use short multiple-choice questions when you can, and free text when you must. A
 
 Documents live in Claude Docs. Do not ask where to put them. Tell the person their briefs will live in Claude as documents they can edit.
 
-That is 6 questions. Do not add more. Do not ask about the LinkedIn add-on, the LinkedIn history import or paste mode. They are optional extras, offered once at the end (Step 6).
+That is 6 questions. Do not add more. Do not ask about the LinkedIn automation option, the LinkedIn history import or paste mode. They are optional extras, offered once at the end (Step 6).
 
 ## Step 3. Show a summary and wait for a yes
 
@@ -69,14 +69,14 @@ Ask: "Should I create this?" Create nothing until they say yes. If they want cha
 
 ## Step 4. Create everything
 
-1. **Settings doc.** Create a Claude Doc named "Weekly Briefs Settings and History" from `shared/settings-template.md`, filled in with the person's answers. Set the LinkedIn add-on line to off. Note its URL.
+1. **Settings doc.** Create a Claude Doc named "Weekly Briefs Settings and History" from `shared/settings-template.md`, filled in with the person's answers. Set the LinkedIn automation option line to off. Note its URL.
 2. **Scheduled tasks.** Create one per brief the person chose:
    - Names: "Weekly sector brief", "Midweek update", "Weekly career guidance".
    - Prompt: the text under "Prompt to install" in the matching file in `tasks/`. Replace `{{VERSION}}` with the contents of `VERSION` and `{{SETTINGS_DOC_URL}}` with the Settings doc URL. Replace `{{MIDWEEK_ON}}` (weekly sector brief only) with yes or no. Replace `{{LINKEDIN_ADDON}}` (midweek update and career guidance only) with off. Then add the full text of `shared/rules.md` at the end.
    - Schedule: the person's day and time, written in their time zone. Pick a minute that is not :00 or :30 (for example 8:07) so runs avoid busy times.
-   - Computer: do not require the person's computer. All three tasks run in the cloud until the person turns on the LinkedIn add-on.
+   - Computer: do not require the person's computer. All three tasks run in the cloud until the person turns on the LinkedIn automation option.
    - Leave notification settings at their defaults. Do not turn on email.
-3. After the tasks exist, say in one sentence which approval setting the tasks got. If runs will stop to ask for approval, tell the person they can switch a task to automatic approval in its settings, if their organization allows it.
+3. After the tasks exist, say in one sentence which approval setting the tasks got. If scheduled runs will stop to ask for approval, tell the person they can switch a task to automatic approval in its settings, if their organization allows it.
 4. If any step fails, say which one and why in plain words. Continue with the rest.
 
 ## Step 5. Offer a first brief now
@@ -98,15 +98,15 @@ Send one short message in two parts.
 - Change topics, days, sources or coaches. Just ask.
 - Paste mode: copy LinkedIn posts or replies into a chat and I summarize them.
 - Import your LinkedIn history so I match your topics and suggest coaches and sources you already follow. It takes about 10 minutes, and you choose what to share. Read more: REPO/blob/main/setup/linkedin-export.md
-- LinkedIn add-on: lets me read LinkedIn-only content in your own browser. It carries real risks, so ask me and I will explain them first. Read more: REPO/blob/main/setup/linkedin-addon.md
+- LinkedIn automation option: lets me read LinkedIn-only content in your own browser. It carries real risks, so ask me to explain the risks if need be. Read more: REPO/blob/main/setup/linkedin-addon.md
 - Tell the author how it went: REPO/issues. Nothing is sent unless you choose to.
 
 ## Later requests
 
 - **Change topics, sources, coaches or schedule.** Update the Settings doc, then update the matching scheduled tasks.
 - **Pause, resume or delete a brief.** Use the scheduled task tools. Delete only after a clear yes.
-- **Turn the LinkedIn add-on on.** Follow `setup/linkedin-addon.md`. Do not give installation steps for Claude in Chrome. Link to Anthropic's guide instead.
-- **Turn the LinkedIn add-on off.** Set `{{LINKEDIN_ADDON}}` to off in the midweek update and career guidance task prompts, and stop requiring the computer for those two tasks.
+- **Turn the LinkedIn automation option on.** Follow `setup/linkedin-addon.md`. Do not give installation steps for Claude in Chrome. Link to Anthropic's guide instead.
+- **Turn the LinkedIn automation option off.** Set `{{LINKEDIN_ADDON}}` to off in the midweek update and career guidance task prompts, and stop requiring the computer for those two tasks.
 - **The person pastes LinkedIn posts or replies and asks for help.** Follow `setup/paste-mode.md`.
 - **Import or refresh LinkedIn history.** Follow `setup/linkedin-export.md`.
 - **Export a brief.** Use the Docs export and give the person the file. Save it to a folder only if the person already has one connected and asks for that. Never ask them to connect a folder.
@@ -117,6 +117,6 @@ Send one short message in two parts.
 - Create anything before the person says yes.
 - Invent a source, coach, link or date.
 - Ask for a password or other credential.
-- Turn on the LinkedIn add-on without a clear yes to the warnings.
+- Turn on the LinkedIn automation option without a clear yes to the warnings.
 - Give installation steps for Claude in Chrome. Link to Anthropic's guide.
 - Send the person's details anywhere outside their own Claude account.

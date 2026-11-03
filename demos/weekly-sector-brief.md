@@ -3,7 +3,7 @@
 > **What you get:** The week's news in your topics, 5 comment targets and 2 post ideas, all in one document.
 > **When it arrives:** Sunday morning (you choose).
 > **Reading time:** About 10 minutes.
-> **Why it helps:** You walk into the week knowing what is happening in your field and what you could say about it.
+> You can start your week knowing what's happening in your field over the past few days or week. You'll know how to respond and talk about it too.
 >
 > Sample reader: Riley, a product marketing manager at a healthcare software company. Career goal: move into a director role within a year. Topics: AI in marketing, Data privacy rules, Healthcare software, Telehealth policy.
 
@@ -35,7 +35,7 @@
 
 ## Comment targets
 
-You write your own comment. Tip: add one specific detail from your own work and ask one real question.
+You write your own comment. Tip: add one specific detail from your own work or experience and ask an actual, real question.
 
 1. **[Survey: most small teams use AI for first drafts, few for strategy](https://example.com/demo/ai-survey)** (2 days old)
    - Why join: Many marketers are sharing it, and your view is still missing from the thread.
@@ -80,7 +80,7 @@ You write your own comment. Tip: add one specific detail from your own work and 
 
 ## Midweek update
 
-Filled in by the midweek run.
+Filled in by the midweek scheduled run.
 
 ## Sources
 
