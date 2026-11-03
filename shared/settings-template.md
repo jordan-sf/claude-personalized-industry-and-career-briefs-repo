@@ -3,7 +3,7 @@
 Version: {{VERSION}}
 Created: {{DATE}}
 Briefs turned on: {{BRIEFS_ON}}
-LinkedIn automation option: {{LINKEDIN_ADDON}}
+LinkedIn automation option: {{LINKEDIN_AUTOMATION}}
 Time zone: {{TIMEZONE}}
 Documents live in: Claude Docs (ask Claude to export any brief to Word, PDF or Markdown)
 

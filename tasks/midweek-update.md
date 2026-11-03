@@ -7,11 +7,11 @@ LinkedIn: used only when the automation option is on, for one job: the person's 
 
 ## Prompt to install
 
-Placeholders: `{{VERSION}}`, `{{SETTINGS_DOC_URL}}`, `{{LINKEDIN_ADDON}}` (on or off). Add the full text of `shared/rules.md` after the prompt.
+Placeholders: `{{VERSION}}`, `{{SETTINGS_DOC_URL}}`, `{{LINKEDIN_AUTOMATION}}` (on or off). Add the full text of `shared/rules.md` after the prompt.
 
 ---
 
-Midweek update run. Version {{VERSION}}. Settings doc: {{SETTINGS_DOC_URL}}. LinkedIn automation option: {{LINKEDIN_ADDON}}.
+Midweek update run. Version {{VERSION}}. Settings doc: {{SETTINGS_DOC_URL}}. LinkedIn automation option: {{LINKEDIN_AUTOMATION}}.
 
 Follow these steps exactly, and follow the rules at the end.
 

@@ -59,6 +59,6 @@ Ask in these words (you may split it into short paragraphs): "Some of your profe
 Turn the automation option on only if the person clearly says they understand the warnings, in their own words. If they hesitate, leave it off. After a yes:
 
 1. Collect the coach profile links.
-2. Set `{{LINKEDIN_ADDON}}` to on in the midweek update and career guidance task prompts.
+2. Set `{{LINKEDIN_AUTOMATION}}` to on in the midweek update and career guidance task prompts.
 3. Require the person's computer for those two tasks.
 4. Set the LinkedIn automation option line in the Settings doc to on.

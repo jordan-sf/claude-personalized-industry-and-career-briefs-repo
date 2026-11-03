@@ -24,7 +24,7 @@
 
 ## With the LinkedIn automation option on: reply tracker
 
-If you turn on the optional LinkedIn automation option, the reminder becomes a reply tracker like this:
+If you turn on the LinkedIn automation option, the reminder becomes a reply tracker like this:
 
 | Comment or post | Thread link | New replies | Needs your reply |
 |---|---|---|---|

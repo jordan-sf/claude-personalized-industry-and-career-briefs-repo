@@ -8,7 +8,7 @@ You are helping a person with no technical background set up three weekly briefs
 
 The person gave you a repo link (called REPO below). To read any file in it, take the link, replace `github.com` with `raw.githubusercontent.com`, add `/main/` after the repo name, then add the file path. Example: `https://github.com/OWNER/NAME` and `setup/SETUP.md` become `https://raw.githubusercontent.com/OWNER/NAME/main/setup/SETUP.md`.
 
-Files you will read: `demos/*.md`, `tasks/*.md`, `shared/rules.md`, `shared/settings-template.md`, `VERSION`, `CHANGELOG.md`. Later, when the person asks for an extra: `setup/linkedin-addon.md`, `setup/paste-mode.md`, `setup/linkedin-export.md`.
+Files you will read: `demos/*.md`, `tasks/*.md`, `shared/rules.md`, `shared/settings-template.md`, `VERSION`, `CHANGELOG.md`. Later, when the person asks for an extra: `setup/linkedin-automation.md`, `setup/paste-mode.md`, `setup/linkedin-export.md`.
 
 ## Step 0. Check your tools (do this quietly)
 
@@ -72,7 +72,7 @@ Ask: "Should I create this?" Create nothing until they say yes. If they want cha
 1. **Settings doc.** Create a Claude Doc named "Weekly Briefs Settings and History" from `shared/settings-template.md`, filled in with the person's answers. Set the LinkedIn automation option line to off. Note its URL.
 2. **Scheduled tasks.** Create one per brief the person chose:
    - Names: "Weekly sector brief", "Midweek update", "Weekly career guidance".
-   - Prompt: the text under "Prompt to install" in the matching file in `tasks/`. Replace `{{VERSION}}` with the contents of `VERSION` and `{{SETTINGS_DOC_URL}}` with the Settings doc URL. Replace `{{MIDWEEK_ON}}` (weekly sector brief only) with yes or no. Replace `{{LINKEDIN_ADDON}}` (midweek update and career guidance only) with off. Then add the full text of `shared/rules.md` at the end.
+   - Prompt: the text under "Prompt to install" in the matching file in `tasks/`. Replace `{{VERSION}}` with the contents of `VERSION` and `{{SETTINGS_DOC_URL}}` with the Settings doc URL. Replace `{{MIDWEEK_ON}}` (weekly sector brief only) with yes or no. Replace `{{LINKEDIN_AUTOMATION}}` (midweek update and career guidance only) with off. Then add the full text of `shared/rules.md` at the end.
    - Schedule: the person's day and time, written in their time zone. Pick a minute that is not :00 or :30 (for example 8:07) so runs avoid busy times.
    - Computer: do not require the person's computer. All three tasks run in the cloud until the person turns on the LinkedIn automation option.
    - Leave notification settings at their defaults. Do not turn on email.
@@ -98,15 +98,15 @@ Send one short message in two parts.
 - Change topics, days, sources or coaches. Just ask.
 - Paste mode: copy LinkedIn posts or replies into a chat and I summarize them.
 - Import your LinkedIn history so I match your topics and suggest coaches and sources you already follow. It takes about 10 minutes, and you choose what to share. Read more: REPO/blob/main/setup/linkedin-export.md
-- LinkedIn automation option: lets me read LinkedIn-only content in your own browser. It carries real risks, so ask me to explain the risks if need be. Read more: REPO/blob/main/setup/linkedin-addon.md
+- LinkedIn automation option: lets me read LinkedIn-only content in your own browser. It carries real risks, so ask me to explain the risks if need be. Read more: REPO/blob/main/setup/linkedin-automation.md
 - Tell the author how it went: REPO/issues. Nothing is sent unless you choose to.
 
 ## Later requests
 
 - **Change topics, sources, coaches or schedule.** Update the Settings doc, then update the matching scheduled tasks.
 - **Pause, resume or delete a brief.** Use the scheduled task tools. Delete only after a clear yes.
-- **Turn the LinkedIn automation option on.** Follow `setup/linkedin-addon.md`. Do not give installation steps for Claude in Chrome. Link to Anthropic's guide instead.
-- **Turn the LinkedIn automation option off.** Set `{{LINKEDIN_ADDON}}` to off in the midweek update and career guidance task prompts, and stop requiring the computer for those two tasks.
+- **Turn the LinkedIn automation option on.** Follow `setup/linkedin-automation.md`. Do not give installation steps for Claude in Chrome. Link to Anthropic's guide instead.
+- **Turn the LinkedIn automation option off.** Set `{{LINKEDIN_AUTOMATION}}` to off in the midweek update and career guidance task prompts, and stop requiring the computer for those two tasks.
 - **The person pastes LinkedIn posts or replies and asks for help.** Follow `setup/paste-mode.md`.
 - **Import or refresh LinkedIn history.** Follow `setup/linkedin-export.md`.
 - **Export a brief.** Use the Docs export and give the person the file. Save it to a folder only if the person already has one connected and asks for that. Never ask them to connect a folder.
