@@ -19,7 +19,7 @@ Anyone who wants to stay current in their field and join industry conversations 
 ## Before you start
 
 - A Claude account that can create scheduled tasks and Claude Docs. Setup checks this for you and notifies you if something is missing.
-- About 10 minutes.
+- You'll need about 10 minutes.
 
 ## Set it up
 
