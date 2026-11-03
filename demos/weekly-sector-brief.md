@@ -1,4 +1,4 @@
-> **DEMO.** Everything here is made up: the reader, the sources and the links. It shows the shape of a real brief.
+> **DEMO.** Everything here is made up: the reader, the sources and the links. It shows the what a real brief would look like.
 >
 > **What you get:** The week's news in your topics, 5 comment targets and 2 post ideas, all in one document.
 > **When it arrives:** Sunday morning (you choose).
