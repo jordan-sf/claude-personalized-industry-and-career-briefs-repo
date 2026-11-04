@@ -1,6 +1,6 @@
 # Setup guide (for Claude)
 
-Version 1.0.1
+Version 1.0.2
 
 This file is written for Claude, not for people. If you are a person, start at the [README](https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo#readme).
 
@@ -8,9 +8,13 @@ You are helping a person with no technical background set up three weekly briefs
 
 **Everything you need for setup is in this file.** Do not open other links from this repo during setup. Read the whole file before you start. If you can only read it in parts, keep reading until you reach the end. Use the text in Part 2 exactly as written. If you only have a summary of a section, read that section again before you use it.
 
-What changed in this version: setup now runs from this one file, so the links no longer break. The briefs themselves work the same way.
+What changed in this version: setup asks its questions with Claude's tap-to-answer choices instead of plain text, and each sample brief is framed with a label and an end line so it cannot be mistaken for real content. The briefs themselves work the same way.
 
 ## Part 1. The setup steps
+
+**How to ask.** Use your question tool (the one that shows tappable choices, such as AskUserQuestion) for every question that has choices and for every yes or no. Put the recommended answer first and end its label with "(Recommended)". Use 2 to 4 options per question and up to 4 questions per call. The person can always type their own answer, so do not add an "Other" option. The question dialog can hide your earlier message, so make each question stand on its own: put the key facts in the question text. Ask free-text questions in plain chat text. If you have no question tool, ask in plain text with numbered options.
+
+**How to show things.** Whenever you show something that is not your own words (the samples, a list of sources, the summary), set it apart. Put a bold label line above it, a closing line below it, and a blank line before your own text continues. Never let it run into your own sentences.
 
 ### Step 0. Check your tools (do this quietly)
 
@@ -24,34 +28,35 @@ You need three things: a way to create scheduled tasks, Claude Docs (create and 
 
 In three sentences, say what this does: every week Claude researches the person's topics, gives them things to say on LinkedIn, and summarizes advice from career coaches they pick. They write their own comments and posts. Claude never posts for them.
 
-Part 3 of this file holds a sample of each brief. For each one, show:
+Part 3 of this file holds a sample of each brief. Show all three in one message, one after another. Show each sample exactly as written in Part 3, including the DEMO note at its top and the "Full sample" link at its bottom. Do not shorten, reword or merge them. Frame each one so it cannot be mistaken for your own text:
 
-- the brief's name, and the lines about what the person gets, when it arrives and how long it takes to read (the top of each sample in Part 3 has these)
-- the short excerpt from Part 3
-- the link to the full sample, so the person can open it in a browser if they want
+1. A horizontal rule.
+2. A bold label line: **EXAMPLE 1 of 3 (made up): Weekly sector brief**
+3. The sample, exactly as written in Part 3.
+4. An italic closing line: *End of example 1. Everything above is made up.*
 
-Say that the people, sources and links in the samples are made up.
+Use the same frame for examples 2 and 3. After the third closing line, add a horizontal rule and one plain line in your own words: "Those were examples only. Now a few questions." Keep your own words outside the frames.
 
-Then ask: "Do you want all three briefs (recommended) or only some?"
+Then ask with your question tool: "Which briefs do you want?" Options: "All three (Recommended)" and "Only some". If they pick only some, ask which ones with a second question that allows several answers.
 
 ### Step 2. Ask the setup questions
 
-Use short multiple-choice questions when you can, and free text when you must. Ask in three groups. Skip any question the person already answered.
+Ask in three rounds. Skip any question the person already answered. Ask the two free-text questions (1 and 4) in plain chat text, and ask everything else with your question tool.
 
-**Group 1: About you**
+**Round 1: About you (plain text, one message).** Ask questions 1 and 4 together:
 
 1. "What field or job are you in, in a few words?"
-2. "Which 2 to 4 topics do you want to follow?" Offer examples based on their field. Cap it at 4, because more topics make a longer brief.
-3. "Should I pick 2 or 3 trusted sources for each topic (recommended), or do you have favorites?" If you pick, search for real publications, trade groups and newsletters that publish regularly. Prefer sources that publish original reporting over press releases or sponsored posts. Check that each one exists and posted in the last 30 days. Show the list in one message and let the person approve or swap.
-
-**Group 2: Career**
-
 4. "What are you working toward in your career right now?" One line is enough, for example a promotion, a switch to a new field, a first job, or a stronger public profile.
-5. "Name 1 to 3 career coaches, writers or newsletters you already like. Or I can suggest some." If you suggest, find real, active people or publications (posted in the last 30 days), check them, and show 3 with one line each. Never invent anyone.
 
-**Group 3: Schedule**
+**Round 2: Topics, sources and coaches (question tool, one call).** Ask these three in a single call:
 
-6. "Here are the default days: sector brief on Sunday, career guidance on Tuesday, midweek update on Wednesday, all in the morning. Keep them or change them?" Ask for the person's time zone if you do not know it.
+2. "Which topics do you want to follow?" Allow several answers. Offer 4 topic ideas based on their field. The person can type their own. Keep the total to 4, because more topics make a longer brief.
+3. "Who should pick your sources?" Options: "You pick trusted sources (Recommended)" and "I'll name my favorites". If you pick, search for real publications, trade groups and newsletters that publish regularly (2 or 3 per topic). Prefer sources that publish original reporting over press releases or sponsored posts. Check that each one exists and posted in the last 30 days. Show the list in chat, then ask with your question tool: "Use these sources?" Options: "Use these (Recommended)" and "Swap some". If they name favorites, ask for them in plain text.
+5. "Which career coaches, writers or newsletters do you want?" Options: "Suggest some for me (Recommended)" and "I'll name 1 to 3". If you suggest, find real, active people or publications (posted in the last 30 days), check them, show 3 with one line each in chat, then ask which to keep. Never invent anyone. If they name their own, ask for them in plain text.
+
+**Round 3: Schedule (question tool, one call).**
+
+6. "Keep the default days? Sector brief on Sunday, career guidance on Tuesday, midweek update on Wednesday, all in the morning." Options: "Keep them (Recommended)" and "Change them". If you do not know the person's time zone, add a second question in the same call: "What is your time zone?" with the four main US time zones as options. The person can type any other.
 
 Documents live in Claude Docs. Do not ask where to put them. Tell the person their briefs will live in Claude as documents they can edit.
 
@@ -59,7 +64,7 @@ That is 6 questions. Do not add more. Do not ask about the LinkedIn automation o
 
 ### Step 3. Show a summary and wait for a yes
 
-Show one short summary:
+Show one short summary in chat, set apart with a bold label line ("Your setup summary") and a closing line:
 
 - the briefs they get, with day, time and time zone
 - topics and sources
@@ -67,7 +72,7 @@ Show one short summary:
 - what you will create: one Settings doc and one scheduled task per brief
 - safety: Claude only reads, never posts, never sends anything for them
 
-Ask: "Should I create this?" Create nothing until they say yes. If they want changes, make them and show the summary again.
+Then ask with your question tool: "Create these briefs?" Put the essentials in the question text (the briefs and their days). Options: "Yes, create them (Recommended)" and "I want to change something". Create nothing until they pick yes. If they want changes, make them and show the summary again.
 
 ### Step 4. Create everything
 
@@ -83,7 +88,7 @@ Ask: "Should I create this?" Create nothing until they say yes. If they want cha
 
 ### Step 5. Offer a first brief now
 
-Offer to run the weekly sector brief once right now, so the person sees a real one. Recommend yes. If they agree, follow Prompt A and the Rules from Part 2 in this chat.
+Ask with your question tool: "Want me to run your first weekly sector brief now, so you see a real one?" Options: "Yes, run it now (Recommended)" and "No, wait for the schedule". If they pick yes, follow Prompt A and the Rules from Part 2 in this chat.
 
 ### Step 6. Wrap up
 
@@ -343,7 +348,7 @@ Kept by the scheduled runs. Format: date | topic | title | URL. Last 8 weeks.
 
 ## Part 3. Samples to show in Step 1
 
-Everything in these samples is made up: the reader, the sources, the coaches and the links. Show each one with its excerpt. The full samples are in the repo for anyone who wants to open them in a browser.
+Everything in these samples is made up: the reader, the sources, the coaches and the links. Show each one exactly as written here, framed as described in Step 1. The full samples are in the repo for anyone who wants to open them in a browser.
 
 ### Weekly sector brief
 
