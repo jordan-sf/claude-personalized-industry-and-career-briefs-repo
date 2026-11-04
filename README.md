@@ -23,29 +23,41 @@ Anyone who wants to stay current in their field and join industry conversations 
 
 ## Set it up
 
-Copy this message into Claude and send it:
+Copy this message into Claude and send it. Keep the whole link in the message, because Claude opens links that you send it.
 
-> Please set up my weekly briefs from this GitHub repo: https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs
->
-> Read setup/SETUP.md in that repo and follow it. Show me the sample briefs first, ask me the setup questions in short groups, and show me a summary before you create anything.
+> Please set up my weekly briefs. Open this file, read all of it word for word, and follow it from start to finish: https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/SETUP.md
 
 Claude shows you sample generated documents, then asks a few short questions (and recommended answers), and finally shows you a summary. It doesn't create anything until you approve of it.
+
+### If Claude says it cannot open the link
+
+Use this backup. It needs no links at all.
+
+1. Open the [setup file on GitHub](https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/blob/HEAD/setup/SETUP.md).
+2. Click the copy icon above the text (its tooltip says "Copy raw file").
+3. In a new Claude chat, type: `Please set up my weekly briefs by following the instructions below.` Then paste, and send.
 
 ## Where your briefs live
 
 In Claude, as documents you can edit. Want a copy to keep? Ask Claude at any time, for example: "Export last week's brief to Word." PDF and Markdown work too.
 
-## LinkedIn-only content
+## Optional extras
+
+Setup never asks about these. Each one has a message to copy. Send it in a Claude chat any time after setup. As with setup, keep the whole link in the message. If Claude cannot open a link, use the same backup: open the file on GitHub, click the copy icon, and paste the text into the chat after your request.
+
+### LinkedIn-only content
 
 Some of your professional conversation lives only on LinkedIn. For example, posts from the coaches/people you follow and replies to your own comments. The briefs work well without it, but if you want it covered, there are two choices.
 
-### Paste mode (there's no automation with this, but also no risk to your LinkedIn account)
+#### Paste mode (there's no automation with this, but also no risk to your LinkedIn account)
 
 Copy posts or reply notifications from LinkedIn and paste them into a chat. Claude summarizes them the way the briefs do. Try this:
 
-> Using paste mode from https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs, help me with these. [paste your posts or replies here]
+> Please help me with the LinkedIn posts or replies below. Open this file, read all of it word for word, and follow it: https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/paste-mode.md
+>
+> [paste your posts or replies here]
 
-### LinkedIn automation option (off by default)
+#### LinkedIn automation option (off by default)
 
 Setup does not ask about it. Ask Claude for it any time, and Claude explains the risks first.
 
@@ -67,11 +79,21 @@ It does two jobs and no others:
 - Your computer must be on, with the Claude desktop app and Chrome open and you signed in to LinkedIn, whenever those two briefs run.
 - The weekly sector brief never opens LinkedIn.
 
-Most people should leave it off.
+Most people should leave it off. If you want it, send this message. Claude explains the risks again and asks for a clear yes before it turns anything on.
 
-## Optional: import your LinkedIn history
+> Please help me turn on the LinkedIn automation option for my weekly briefs. Open this file, read all of it word for word, and follow it: https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/linkedin-automation.md
 
-LinkedIn lets you download your own data. If you share a small part of it, Claude can match your usual topics, avoid repeating what you have already posted, and suggest coaches and sources you already follow. You choose what to share, and Claude keeps only a short summary. Setup mentions it at the end, and you can do it any time. [Read more](setup/linkedin-export.md).
+### Import your LinkedIn history
+
+LinkedIn lets you download your own data. If you share a small part of it, Claude can match your usual topics, avoid repeating what you have already posted, and suggest coaches and sources you already follow. You choose what to share, and Claude keeps only a short summary. Setup mentions it at the end, and you can do it any time. [Read more](setup/linkedin-export.md). When you have the files, send this message with the files attached:
+
+> Please import my LinkedIn history for my weekly briefs. Open this file, read all of it word for word, and follow the part called "For Claude": https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/linkedin-export.md
+
+### Update to the newest version
+
+Send this message. Claude compares versions, tells you what changed, and updates your briefs after you say yes. Your answers stay as they are.
+
+> Please update my weekly briefs to the newest version. Open this file, read all of it word for word, and follow its instructions for updating: https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/SETUP.md
 
 ## Privacy and safety
 
@@ -85,22 +107,20 @@ Ask Claude in plain words. For example:
 
 - "Add a topic called restaurant technology."
 - "Move my Sunday brief to Monday at 7am."
-- "Turn the LinkedIn automation option on." (or off)
-- "Import my LinkedIn history."
+- "Turn the LinkedIn automation option off."
 - "Pause all my briefs." or "Delete the career guidance brief."
-- "Update my briefs to the newest version from the repo."
+
+To turn the LinkedIn automation option on, import your LinkedIn history, or update to a newer version, send the matching message from [Optional extras](#optional-extras).
 
 ## Feedback
 
-Questions or ideas? Open an issue in this repo. Nothing is sent to the author unless you choose to write one.
+Questions or ideas? Open an issue in this repo. If something did not work, paste what Claude told you. Nothing is sent to the author unless you choose to write one.
 
 ## What's in this repo
 
 | Folder | What it holds |
 |---|---|
-| `setup/` | The step-by-step guide Claude follows to set you up, the LinkedIn automation option page, paste mode, and the LinkedIn history import |
-| `tasks/` | The instructions for each of the three briefs |
-| `shared/` | Rules every brief follows, and the template for your settings doc |
+| `setup/` | `SETUP.md`, the one file Claude follows to set you up (it also holds the exact instructions each brief follows), plus the LinkedIn automation option page, paste mode, and the LinkedIn history import |
 | `demos/` | Sample briefs with made-up content |
 
 ## License

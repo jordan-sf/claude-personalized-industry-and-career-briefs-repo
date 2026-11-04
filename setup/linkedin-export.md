@@ -18,7 +18,11 @@ LinkedIn lets you download your own data. If you share a small part of it, your 
 1. On a computer (not the mobile app), open LinkedIn and choose Me, then Settings & Privacy, then Data privacy, then Download your data. Direct link: https://www.linkedin.com/mypreferences/d/download-my-data
 2. Choose "Want something in particular?" and tick only these, if they are listed: **Comments, Shares, Member Follows, Company Follows**. Do not choose the larger archive.
 3. Wait for LinkedIn's email. Some files arrive in minutes and others within 48 hours. The download link expires after 72 hours.
-4. Start a chat with Claude, attach those files, and say: "Import my LinkedIn history using https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs"
+4. Start a chat with Claude, attach those files, and send this message. Keep the whole link in it, because Claude opens links that you send it:
+
+   > Please import my LinkedIn history for my weekly briefs. Open this file, read all of it word for word, and follow the part called "For Claude": https://raw.githubusercontent.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/HEAD/setup/linkedin-export.md
+
+   If Claude cannot open the link, open the file on GitHub, click the copy icon above the text, and paste it into the chat after your request.
 
 LinkedIn explains each category here: https://www.linkedin.com/help/linkedin/answer/a1339364
 

@@ -4,7 +4,7 @@ Setup does not ask about this automation option. Follow this page only when the 
 
 Say this first, in these words: "The automation option lets Claude read LinkedIn-only content in your own browser, so your briefs can point you to it. You do all the commenting and posting yourself. Claude never does."
 
-Then show the person "What it is for", "What it is not for", "What you need", "About Claude in Chrome" and "Warnings" in plain words. Offer paste mode (`setup/paste-mode.md`) as the no-risk alternative.
+Then show the person "What it is for", "What it is not for", "What you need", "About Claude in Chrome" and "Warnings" in plain words. Offer paste mode as the no-risk alternative: the person copies LinkedIn posts or replies into a chat and you summarize them. The README has a ready-made message for it at https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo#optional-extras
 
 ## What it is for
 
@@ -52,13 +52,13 @@ Posting, commenting, reacting, messaging, connection requests, following, search
 
 ## The question to ask
 
-Ask in these words (you may split it into short paragraphs): "Some of your professional conversation lives only on LinkedIn: posts from the coaches you follow, and replies to your own comments. The optional LinkedIn automation option lets Claude read those in your own browser so your briefs can point you to them. You do all the commenting and posting yourself. Claude never does. LinkedIn's rules do not allow tools like this, and LinkedIn can limit or close your account. Most people should leave it off. Do you want it on?"
+Ask in these words (you can split it into short paragraphs): "Some of your professional conversation lives only on LinkedIn: posts from the coaches you follow, and replies to your own comments. The optional LinkedIn automation option lets Claude read those in your own browser so your briefs can point you to them. You do all the commenting and posting yourself. Claude never does. LinkedIn's rules do not allow tools like this, and LinkedIn can limit or close your account. Most people should leave it off. Do you want it on?"
 
 ## Confirmation
 
 Turn the automation option on only if the person clearly says they understand the warnings, in their own words. If they hesitate, leave it off. After a yes:
 
 1. Collect the coach profile links.
-2. Set `{{LINKEDIN_AUTOMATION}}` to on in the midweek update and career guidance task prompts.
+2. In the midweek update and career guidance scheduled task prompts, change "LinkedIn automation option: off" to "LinkedIn automation option: on" in the first line.
 3. Require the person's computer for those two tasks.
 4. Set the LinkedIn automation option line in the Settings doc to on.
