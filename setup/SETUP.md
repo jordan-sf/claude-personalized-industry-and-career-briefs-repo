@@ -1,6 +1,6 @@
 # Setup guide (for Claude)
 
-Version 1.0.2
+Version 1.0.3
 
 This file is written for Claude, not for people. If you are a person, start at the [README](https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo#readme).
 
@@ -8,7 +8,7 @@ You are helping a person with no technical background set up three weekly briefs
 
 **Everything you need for setup is in this file.** Do not open other links from this repo during setup. Read the whole file before you start. If you can only read it in parts, keep reading until you reach the end. Use the text in Part 2 exactly as written. If you only have a summary of a section, read that section again before you use it.
 
-What changed in this version: setup asks its questions with Claude's tap-to-answer choices instead of plain text, and each sample brief is framed with a label and an end line so it cannot be mistaken for real content. The briefs themselves work the same way.
+What changed in this version: the optional extras are now shown, with a short explanation of each, right after the briefs are created and before the first brief runs, so they cannot be skipped. The briefs themselves work the same way.
 
 ## Part 1. The setup steps
 
@@ -60,7 +60,7 @@ Ask in three rounds. Skip any question the person already answered. Ask the two 
 
 Documents live in Claude Docs. Do not ask where to put them. Tell the person their briefs will live in Claude as documents they can edit.
 
-That is 6 questions. Do not add more. Do not ask about the LinkedIn automation option, the LinkedIn history import or paste mode. They are optional extras, offered once at the end (Step 6).
+That is 6 questions. Do not add more. Do not ask about the LinkedIn automation option, the LinkedIn history import or paste mode. They are optional extras, offered once at the end (Step 5).
 
 ### Step 3. Show a summary and wait for a yes
 
@@ -86,29 +86,28 @@ Then ask with your question tool: "Create these briefs?" Put the essentials in t
 3. After the tasks exist, say in one sentence which approval setting the tasks got. If scheduled runs will stop to ask for approval, tell the person they can switch a task to automatic approval in its settings, if their organization allows it.
 4. If any step fails, say which one and why in plain words. Continue with the rest.
 
-### Step 5. Offer a first brief now
+### Step 5. Wrap up and show the optional extras
 
-Ask with your question tool: "Want me to run your first weekly sector brief now, so you see a real one?" Options: "Yes, run it now (Recommended)" and "No, wait for the schedule". If they pick yes, follow Prompt A and the Rules from Part 2 in this chat.
+This step is required. Do it right after Step 4 and before any first brief runs, so a long first run cannot push it out. Send one message with two blocks. Frame each block with a bold label line above it and an italic closing line below it.
 
-### Step 6. Wrap up
-
-Send one short message in two blocks.
-
-**First block, the essentials:**
+**Block 1, label "Your briefs are set up":**
 
 - what you created and where the Settings doc is
 - the exact date and time of each brief's first run, in their time zone
 
-**Second block, "Optional extras, whenever you want".** Do not ask these as questions. List them in one short block, one line each:
+**Block 2, label "Optional extras, whenever you want":** Show all of these lines, in these words. Do not ask about them and do not drop any.
 
-- Export any brief to Word, PDF or Markdown and get the file. Just ask.
-- Change topics, days, sources or coaches. Just ask.
-- Paste mode: copy LinkedIn posts or replies into a chat and I summarize them.
-- Import your LinkedIn history so I match your topics and suggest coaches and sources you already follow. It takes about 10 minutes, and you choose what to share.
-- LinkedIn automation option: lets me read LinkedIn-only content in your own browser. It carries real risks, so ask me to explain the risks if need be.
-- Tell the author how it went. Nothing is sent unless you choose to.
+- **Export.** Ask me to export any brief to Word, PDF or Markdown, and I give you the file.
+- **Change anything.** Ask me to change your topics, days, sources or coaches whenever you want.
+- **Paste mode.** Copy posts or replies from LinkedIn and paste them into a chat. I summarize them the way your briefs do. Nothing touches your LinkedIn account.
+- **Import your LinkedIn history.** Download a small part of your own LinkedIn data and share it. I use it to match your usual topics and to suggest coaches and sources you already follow. It takes about 10 minutes, and you choose what to share.
+- **LinkedIn automation option (off now).** Lets me read LinkedIn-only content, such as posts from your coaches and replies to your comments, in your own browser. It carries real risks, including to your LinkedIn account, so most people leave it off. I explain the risks first if you ask for it.
+- **Update.** When there is a newer version of this setup, send the ready-made update message and I refresh your briefs.
+- **Feedback.** Tell the author how it went. Nothing is sent unless you choose to.
 
-Then add one line: "Each of these has a ready-made message to copy here: https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo#optional-extras". For feedback, give this link: https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/issues
+After the list, add one line: "Each of these has a ready-made message to copy here: https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo#optional-extras". For feedback, give this link: https://github.com/jordan-sf/claude-personalized-industry-and-career-briefs-repo/issues
+
+Then ask with your question tool: "Want me to run your first weekly sector brief now, so you see a real one?" Options: "Yes, run it now (Recommended)" and "No, wait for the schedule". If they pick yes, follow Prompt A and the Rules from Part 2 in this chat. Do not repeat the extras after the run.
 
 ## Later requests (after setup)
 

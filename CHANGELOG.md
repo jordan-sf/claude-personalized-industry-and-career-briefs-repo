@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3
+
+The optional extras (export, paste mode, LinkedIn history import, LinkedIn automation option, update, feedback) are now explained in full in a required wrap-up that comes before the first brief runs. Before, the wrap-up came after the first-brief offer, so a long first run could skip it.
+
 ## 1.0.2
 
 Setup asks its questions with Claude's tap-to-answer choices instead of plain text, and frames each sample brief with a label and an end line so it cannot be mistaken for real content. The briefs themselves are unchanged.
